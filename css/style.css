@@ -41,8 +41,10 @@ body {
 
 .hebergements-title:hover,
 .activities-title:hover,
+.section-title:hover,
 .hebergements-title:active,
 .activities-title:active,
+.section-title:active,
 .card{
     cursor: pointer;
 }
@@ -75,7 +77,8 @@ body {
 /****** Header ***********/
 
 /*** Nav ***/
-header{
+header,
+.top__container{
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -86,7 +89,7 @@ header{
     padding: 1.5em 0;
 }
 
-.navbar{
+nav{
     display: flex;
     justify-content: space-between;
 }
@@ -98,12 +101,11 @@ header{
     border-top: white solid 2px;
 }
 
-nav{
+.nav__menuButtons{
     display: flex;
     justify-content: space-between;
     margin: 0;
     width: 20%;
-    /* ! Fix the right align */
 }
 
 .nav__menu--active{
@@ -156,6 +158,11 @@ nav{
     margin: 1em 0;
 }
 
+.search__box-text::placeholder{
+    color: black;
+    opacity: 1;
+}
+
 .search__box-geo{
     display: flex;
     justify-content: center;
@@ -165,8 +172,7 @@ nav{
     border-radius: 15px 0px 0px 15px;
     width: 15%;
     height: 3em;
-    color: black;
-    
+    color: black;  
 }
 
 .search__box-text{
@@ -174,9 +180,10 @@ nav{
     width: 55%;
     border: none;
     padding: 0.5em;
+    padding-left: 1em;
     font-weight: bold;
     font-size: 1em;
-
+    color: #121212;
 }
 
 .search__box-search-text{
@@ -498,7 +505,7 @@ footer{
         overflow: hidden;
     }
 
-    nav{
+    .nav__menuButtons{
         width: 40%;
     }
 
@@ -512,6 +519,7 @@ footer{
     .search__title--subtitle{
         margin-bottom: 1em;
     }
+
 
     .search__box{
         margin: 2em 0;
@@ -645,11 +653,11 @@ footer{
         align-self: center;
     }
     
-    .navbar{
+    nav{
         flex-direction: column;
     }
 
-    nav{
+    .nav__menuButtons{
         width: 100%;
     }
 
