@@ -458,7 +458,6 @@ nav{
     flex-direction: column;
     justify-content: space-evenly;
     background-color: white;
-    align-items: left;
     filter: drop-shadow(0px 2px 15px rgba(0,0,0,0.1));
     border-radius: 20px;
     overflow: hidden;
