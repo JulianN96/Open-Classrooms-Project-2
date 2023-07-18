@@ -131,7 +131,6 @@ nav{
     order: 1;
     align-self: stretch;
     flex-grow: 0;
-
 }
 
 .search__title--subtitle{
@@ -175,11 +174,9 @@ nav{
     width: 15%;
     height: 3em;
     background: var(--main-bg-color);
-
 }
 
 .search__box-geo{
-
     color: black;
 }
 
@@ -309,7 +306,6 @@ nav{
 }
 
 .hebergements-and-populaires section {
-    
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
@@ -448,8 +444,6 @@ nav{
 
 .activity-card{
     width: 25em;
-
-    
 }
 
 .activity-card,
@@ -529,6 +523,8 @@ footer{
     font-size: 16px;
     line-height: 19px;
     margin: .5em 0;
+    text-decoration: none;
+    color: black;
 }
 
 .footer__nav-subMenu-option:hover, 
@@ -735,7 +731,6 @@ footer{
 
     .search__box-magnifying-glass{
         display: flex;
-
     }
 
     .fa-magnifying-glass{
