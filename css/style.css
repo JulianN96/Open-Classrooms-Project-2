@@ -101,16 +101,16 @@ nav{
     border-top: white solid 2px;
 }
 
+.nav__menu:hover,.nav__menu:active{
+    color: var(--main-color);
+    border-top: solid 2px var(--main-color);
+}
+
 .nav__menuButtons{
     display: flex;
     justify-content: space-between;
     margin: 0;
     width: 20%;
-}
-
-.nav__menu--active{
-    color: var(--main-color);
-    border-top: solid 2px var(--main-color);
 }
 
 /*** Search ***/
@@ -704,7 +704,8 @@ footer{
         flex-grow: 1;
     }
 
-    .nav__menu--active{
+    .nav__menu:hover,
+    .nav__menu:active{
         border-top: none;
         border-bottom: solid 2px var(--main-color);
     }
